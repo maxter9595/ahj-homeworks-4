@@ -8,6 +8,7 @@ describe("Card Validation Tests", () => {
     jest.setTimeout(30000);
     browser = await puppeteer.launch({
       headless: true,
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
     });
     page = await browser.newPage();
   });
