@@ -1,0 +1,174 @@
+/* General styles */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+/* Styles for the list and cards */
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+
+.cards {
+  margin: 10px 0 10px 0;
+  height: 25px;
+}
+
+.cards li {
+  display: block;
+  float: left;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* Individual card styles */
+.card {
+  float: left;
+  width: 39px;
+  height: 25px;
+  text-indent: -9999px;
+  background-position: 0 0;
+  margin-right: 4px;
+}
+
+.card.mir {
+  background-image: url(../img/card-mir.gif);
+}
+
+.card.visa {
+  background-image: url(../img/card-visa.gif);
+}
+
+.card.master {
+  background-image: url(../img/card-mastercard.gif);
+}
+
+.card.amex {
+  background-image: url(../img/card-amex.gif);
+}
+
+.card.discover {
+  background-image: url(../img/card-discover.gif);
+}
+
+.card.jcb {
+  background-image: url(../img/card-jcb.gif);
+}
+
+.card.diners_club {
+  background-image: url(../img/card-diners.gif);
+}
+
+/* Disabled card styles */
+.card.cdisabled {
+  background-position: 0 -25px;
+  opacity: 0.4;
+}
+
+/* Form styles */
+form {
+  display: block;
+  margin-top: 0em;
+  unicode-bidi: isolate;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+#submitform {
+  margin-left: 10px;
+}
+
+/* Form input field styles */
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+/* Responsive styles */
+@media (min-width: 50px) {
+  .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+
+  .form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+}
