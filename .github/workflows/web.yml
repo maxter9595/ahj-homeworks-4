@@ -42,7 +42,7 @@ jobs:
           cache: "yarn"
       - run: yarn
       - name: Install dependencies for Puppeteer
-        run: sudo apt-get update && sudo apt-get install -y libnss3 libxss1 libasound2
+        run: sudo apt-get update && sudo apt-get install -y libnss3 libxss1 libasound2t64
       - run: yarn test
 
   build:
